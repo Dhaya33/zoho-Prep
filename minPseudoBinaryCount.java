@@ -1,6 +1,6 @@
 public class minPseudoBinaryCount {
     public static void main(String[] args) {
-        int num=31;
+        int num=35;
         System.out.println(findMinPseudoBinaryCount(num));
     }
 

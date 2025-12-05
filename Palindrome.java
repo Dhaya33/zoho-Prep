@@ -12,7 +12,6 @@ public class Palindrome {
 
         while(left<right){
             if(!Character.isAlphabetic(str.charAt(left))){
-
                 left++;
 
             } else if (!Character.isAlphabetic(str.charAt(right))) {

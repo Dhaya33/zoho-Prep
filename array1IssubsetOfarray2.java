@@ -1,29 +1,32 @@
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
 public class array1IssubsetOfarray2 {
     public static void main(String[] args) {
-        int[] arr1= {1,2,3,4};
-        int[] arr2= {2,6};
+
+        String[] arr1= {"dhaya"};
+        String[] arr2= {"dhaya"};
         System.out.println(findingSubsetOfArray(arr1,arr2));
 
-
     }
-    private static boolean findingSubsetOfArray(int[] arr1, int[] arr2){
+    private static boolean findingSubsetOfArray(String[] arr1, String[] arr2){
 
-        Set<Integer> sets= new HashSet<>();
+        Set<String> sets= new HashSet<>();
 
-        for(int nums:arr1){
-            sets.add(nums);
+        if(Arrays.equals(arr1, arr2)){
+            System.out.println("strings are equal");
         }
-        for(int num: arr2){
-            if(!sets.contains(num)){
+
+        for(String s:arr1){
+            sets.add(s);
+        }
+        for(String s: arr2){
+            if(!sets.contains(s)){
                 return false;
-            }else {
-                return true;
             }
 
-        }return false;
+        }return true;
     }
 
 }

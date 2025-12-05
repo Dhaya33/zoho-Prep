@@ -1,6 +1,8 @@
+import java.sql.SQLOutput;
+
 public class longestNonRepeatingSubstrng {
     public static void main(String[] args) {
-        String str = "abcdabcde";
+        String str = "abade";
         System.out.println(findingLongestNonrepeatingSubstring(str));
 
     }
@@ -19,7 +21,10 @@ public class longestNonRepeatingSubstrng {
             lastseen[currentchar]=i+1;
             maxlen=Math.max(maxlen,i+1-start);
 
+
+
         }
+
         return maxlen;
 
 

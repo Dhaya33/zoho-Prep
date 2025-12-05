@@ -1,6 +1,6 @@
 public class secondLargestElement {
     public static void main(String[] args) {
-        int [] arr = {4,5,3,2,1};
+        int [] arr = {4,5,3,6,1};
 
         System.out.println(FindSecondLargestElement(arr));
     }
@@ -17,7 +17,7 @@ public class secondLargestElement {
             {
                 sec_max=max;
                 max=nums;
-            } else if (sec_max<nums && nums!=max) {
+            } else if(sec_max<nums && nums!=max) {
                 sec_max=nums;
                 //System.out.println(sec_max);
 

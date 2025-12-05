@@ -9,7 +9,7 @@ public class findUniqueElement {
 
         int result=0;
         for (int num : arr){
-            result = result ^ num;
+            result = result ^ num; // using XOR bit method, able to find that unique element
 
         }return result;
     }

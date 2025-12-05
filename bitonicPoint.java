@@ -1,7 +1,7 @@
 public class bitonicPoint {
     public static void main(String[] args) {
 
-        int [] arr={1,3,1,12,14,18,1};
+        int [] arr={1,3,1,12,14,1};
         System.out.println(findingBitonicpoint(arr));
     }
     private static int findingBitonicpoint(int [] arr){
