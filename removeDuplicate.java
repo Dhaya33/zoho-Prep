@@ -15,8 +15,11 @@ public class removeDuplicate {
         for(int i=0;i<256;i++){
 
             if(count[i]>1) {
+
                 System.out.println((char)i + "--> " + count[i]);
+                
             }
         }
     }
 }
+

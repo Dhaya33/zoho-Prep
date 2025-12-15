@@ -17,9 +17,7 @@ public class primeOrNot {
 
                     break;
                 }
-
-        }
-
+            }
 
         }System.out.println(isPrime);
     }
