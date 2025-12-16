@@ -3,7 +3,7 @@ import java.util.PriorityQueue;
 public class findKthElement {
     public static void main(String[] args) {
         int[] arr={1,3,4,6,45};
-        System.out.println(KthsmallestElement(arr,3));
+        System.out.println(KthsmallestElement(arr,6));
 
     }
     private static int KthsmallestElement(int [] arr,int k) {
@@ -21,7 +21,13 @@ public class findKthElement {
 
                 minHeap.poll(); //by following condition, it removes 1st,2nd index elements(k-1)
 
+
+
         }
+
+
+
+
         return minHeap.peek();// here,the kth element is the 1st element, so this method returns peek element.
 
     }
