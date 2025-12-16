@@ -11,8 +11,8 @@ public class missing_Num {
 
         }
 
-        int n=arr.length;
-        int total_length=n*(n+1)/2;   // n*(n+1)/2
+        int length=arr.length;
+        int total_length=length*(length+1)/2;
 
         for(int nums:arr){
             total_length=total_length-nums;
