@@ -1,6 +1,6 @@
 public class secondLargestElement {
     public static void main(String[] args) {
-        int [] arr = {4,5,3,6,1};
+        int [] arr = {4,5,3,2,1};
 
         System.out.println(FindSecondLargestElement(arr));
     }
@@ -12,14 +12,13 @@ public class secondLargestElement {
         int max = Integer.MIN_VALUE;
         int sec_max = Integer.MIN_VALUE;
 
-        for(int num:arr){
-            if(max<num)
+        for(int nums:arr){
+            if(max<nums)
             {
-                sec_max=max; // changing the max value because,current value is getting assigned to max;
-                max=num;
-            } else if(sec_max<num && num!=max) { // this loop will run, if the number is less than and not equal to max
-                sec_max=num;                     // and the current second max is also less than this number!~
-
+                sec_max=max;
+                max=nums;
+            } else if (sec_max<nums && nums!=max) {
+                sec_max=nums;
                 //System.out.println(sec_max);
 
 
@@ -27,9 +26,9 @@ public class secondLargestElement {
 
 
         }
-//        if(sec_max==Integer.MIN_VALUE){
-//            return max;
-//        }
+        if(sec_max==Integer.MIN_VALUE){
+            return max;
+        }
 
         return sec_max;
 

@@ -1,8 +1,7 @@
 public class findingFirstNonRepeatChar {
 
     public static void main(String[] args) {
-
-        String str = "ababc";
+        String str = "abcabc";
 
         System.out.println(nonrepeatchar(str));
 
@@ -15,11 +14,9 @@ public class findingFirstNonRepeatChar {
             return null;
 
         }
-
         int [] count = new int[256];
-
-        for(char ch:str.toCharArray()){
-            count[ch]++;
+        for(int i =0;i < length;i++){
+            count[str.charAt(i)]++;
 
         }
         for (int i = 0; i <length ; i++) {

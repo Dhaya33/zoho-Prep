@@ -3,7 +3,7 @@ public class leadersInArray {
         int [] arr={16,17,4,3,5,2};
 
         int max=Integer.MIN_VALUE;
-
+        int[] ouput=new int[arr.length+1];
 
         StringBuilder resultantArray= new StringBuilder();
 
